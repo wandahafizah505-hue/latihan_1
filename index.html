@@ -1,0 +1,470 @@
+
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portofolio Wanda Hafizah</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+
+        /* WARNA ABU-ABU UNTUK AREA ENAM KARTU MATERI */
+        #menu .card.bg-primary-subtle {
+            background-color: #e2e2e2 !important;
+        }
+
+        /* Area carousel foto */
+        #carouselExampleRide {
+            background-color: #e2e2e2;
+            padding: 20px 0;
+            border-radius: 15px;
+        }
+
+        /* Area profil */
+        #about-footer > .card {
+            background-color: #e2e2e2 !important;
+        }
+
+        /* Tampilan kartu materi */
+        #menu .card .card {
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        #menu .card .card:hover {
+            transform: translateY(-5px);
+        }
+
+        #menu .card-img-top {
+            padding: 12px;
+        }
+
+        /* Tombol kontak */
+        .btn-custom {
+            background-color: #0d6efd;
+            color: white;
+            border: none;
+            padding: 10px 22px;
+            border-radius: 8px;
+        }
+
+        .btn-custom:hover {
+            background-color: #084298;
+            color: white;
+        }
+
+        /* Formulir kontak */
+        #kontak form {
+            background-color: #f1f1f1;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Foto carousel responsif */
+        @media (max-width: 768px) {
+            #carouselExampleRide img {
+                width: 85% !important;
+                height: 250px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+        <div class="container-fluid">
+
+            <a class="navbar-brand fw-bold" href="#">Wanda's Portfolio</a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarText"
+                    aria-controls="navbarText"
+                    aria-expanded="false"
+                    aria-label="Buka navigasi">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-footer">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">Kontak</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- CAROUSEL FOTO -->
+    <div id="carouselExampleRide"
+         class="carousel slide mb-4"
+         data-bs-ride="carousel"
+         data-bs-interval="3000">
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="foto1.jpg"
+                     class="d-block mx-auto"
+                     style="width:50%; height:350px; object-fit:cover;"
+                     alt="Foto pertama">
+            </div>
+
+            <div class="carousel-item">
+                <img src="foto2.jpg"
+                     class="d-block mx-auto"
+                     style="width:50%; height:350px; object-fit:cover;"
+                     alt="Foto kedua">
+            </div>
+
+            <div class="carousel-item">
+                <img src="foto3.jpeg"
+                     class="d-block mx-auto"
+                     style="width:50%; height:350px; object-fit:cover;"
+                     alt="Foto ketiga">
+            </div>
+
+        </div>
+
+        <div class="carousel-indicators position-static mt-3">
+            <button type="button"
+                    data-bs-target="#carouselExampleRide"
+                    data-bs-slide-to="0"
+                    class="active bg-dark"
+                    aria-label="Foto 1"
+                    aria-current="true"></button>
+
+            <button type="button"
+                    data-bs-target="#carouselExampleRide"
+                    data-bs-slide-to="1"
+                    class="bg-dark"
+                    aria-label="Foto 2"></button>
+
+            <button type="button"
+                    data-bs-target="#carouselExampleRide"
+                    data-bs-slide-to="2"
+                    class="bg-dark"
+                    aria-label="Foto 3"></button>
+        </div>
+
+        <button class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleRide"
+                data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark rounded"></span>
+            <span class="visually-hidden">Sebelumnya</span>
+        </button>
+
+        <button class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleRide"
+                data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark rounded"></span>
+            <span class="visually-hidden">Selanjutnya</span>
+        </button>
+
+    </div>
+
+
+    <!-- TENTANG SAYA -->
+    <section id="about-footer" class="container py-5">
+
+        <div class="card bg-primary-subtle shadow-sm border-0 rounded-4 p-3">
+            <div class="row g-3 align-items-center">
+
+                <div class="col-12">
+                    <div class="card-body">
+
+                        <h2 class="text-primary text-center mb-4">
+                            Tentang Saya
+                        </h2>
+
+                        <h3><b>Wanda Hafizah</b></h3>
+
+                        <p><b>Kelas:</b> XI RPL 3</p>
+
+                        <p>
+                            <b>Jurusan:</b> Rekayasa Perangkat Lunak
+                        </p>
+
+                        <p>
+                            Saya adalah siswi SMK jurusan Rekayasa Perangkat
+                            Lunak yang tertarik mempelajari teknologi dan
+                            pengembangan website. Dalam proses belajar,
+                            saya mempelajari HTML untuk membuat struktur
+                            halaman, CSS untuk mengatur tampilan, dan
+                            JavaScript untuk menambahkan fitur interaktif.
+                            Saya juga belajar menggunakan Bootstrap agar
+                            website lebih rapi dan responsif, serta mulai
+                            mengenal PHP dan MySQL untuk pengembangan website
+                            dan pengelolaan database. Saya ingin terus
+                            meningkatkan kemampuan melalui latihan dan
+                            berbagai proyek sederhana agar dapat membuat
+                            website yang menarik, bermanfaat, dan nyaman
+                            digunakan.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- GRID DAN CARD MATERI -->
+    <section id="menu" class="my-4 container">
+
+        <div class="card bg-primary-subtle shadow-sm border-0 rounded-4 p-3 p-md-4">
+
+            <h2 class="text-primary text-center mb-4">
+                Pelajaran Kompetensi RPL
+            </h2>
+
+            <div class="row g-4">
+
+                <!-- HTML -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="html.png"
+                             class="card-img-top"
+                             style="height:180px; object-fit:contain;"
+                             alt="Logo HTML">
+
+                        <div class="card-body">
+                            <h5 class="card-title">HTML</h5>
+                            <p class="card-text">
+                                Mempelajari struktur dasar halaman website
+                                menggunakan elemen dan tag HTML.
+                            </p>
+                            <a href="https://www.w3schools.com/html/"
+                               class="btn btn-primary">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CSS -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="css.png"
+                             class="card-img-top"
+                             style="height:180px; object-fit:contain;"
+                             alt="Logo CSS">
+
+                        <div class="card-body">
+                            <h5 class="card-title">CSS</h5>
+                            <p class="card-text">
+                                Mempelajari cara mengatur warna, ukuran,
+                                jarak, dan tampilan website.
+                            </p>
+                            <a href="https://www.w3schools.com/css/"
+                               class="btn btn-primary">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- JAVASCRIPT -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="js.png"
+                             class="card-img-top"
+                             style="height:180px; object-fit:contain;"
+                             alt="Logo JavaScript">
+
+                        <div class="card-body">
+                            <h5 class="card-title">JavaScript</h5>
+                            <p class="card-text">
+                                Mempelajari bahasa pemrograman untuk
+                                membuat website lebih interaktif.
+                            </p>
+                            <a href="https://www.w3schools.com/js/"
+                               class="btn btn-primary">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BOOTSTRAP -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="boostrap.png"
+                             class="card-img-top"
+                             style="height:180px; object-fit:contain;"
+                             alt="Logo Bootstrap">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Bootstrap</h5>
+                            <p class="card-text">
+                                Mempelajari framework CSS untuk membantu
+                                membuat website responsif dengan lebih mudah.
+                            </p>
+                            <a href="https://www.w3schools.com/bootstrap5/"
+                               class="btn btn-primary">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PHP -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="php.png"
+                             class="card-img-top"
+                             style="height:180px; object-fit:contain;"
+                             alt="Logo PHP">
+
+                        <div class="card-body">
+                            <h5 class="card-title">PHP</h5>
+                            <p class="card-text">
+                                Mempelajari pemrograman sisi server untuk
+                                membuat website yang dinamis.
+                            </p>
+                            <a href="https://www.w3schools.com/php/"
+                               class="btn btn-primary">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MYSQL -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="mysql.png"
+                             class="card-img-top"
+                             style="height:180px; object-fit:contain;"
+                             alt="Logo MySQL">
+
+                        <div class="card-body">
+                            <h5 class="card-title">MySQL</h5>
+                            <p class="card-text">
+                                Mempelajari cara menyimpan, mengatur,
+                                dan mengelola data dalam database.
+                            </p>
+                            <a href="https://www.w3schools.com/mysql/"
+                               class="btn btn-primary">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- KONTAK -->
+    <section id="kontak" class="container py-5">
+
+        <h2 class="text-primary text-center mb-4">Hubungi Saya</h2>
+
+        <form onsubmit="event.preventDefault();
+                        document.getElementById('pesanBerhasil').classList.remove('d-none');
+                        this.reset();">
+
+            <div class="mb-3">
+                <label class="form-label">Nama</label>
+                <input type="text"
+                       class="form-control"
+                       placeholder="Masukkan nama kamu"
+                       required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email"
+                       class="form-control"
+                       placeholder="Masukkan email kamu"
+                       required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Pesan</label>
+                <textarea class="form-control"
+                          rows="4"
+                          placeholder="Tulis pesan di sini"
+                          required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-custom">
+                Kirim Pesan
+            </button>
+
+            <!-- NOTIFIKASI SETELAH TOMBOL DIKLIK -->
+            <div id="pesanBerhasil"
+                 class="alert alert-success mt-3 d-none"
+                 role="alert">
+
+                <h5 class="alert-heading">
+                    Terima kasih atas pesanmu!
+                </h5>
+
+                <p class="mb-0">
+                    Pesanmu sudah tercatat di formulir ini.
+                    Terima kasih sudah meluangkan waktu untuk
+                    menghubungi saya. Saya sangat menghargainya!
+                </p>
+
+            </div>
+
+        </form>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-4">
+
+        <div class="container">
+
+            <h5>Wanda Hafizah</h5>
+
+            <p>Siswi Rekayasa Perangkat Lunak (RPL)</p>
+
+            <p>
+                Media Sosial:
+                <a href="https://www.instagram.com/wanda.haf/"
+                   class="text-warning mx-2">
+                    Instagram
+                </a>
+            </p>
+
+            <hr>
+
+            <p class="mb-0">
+                &copy; 2026 Portofolio Wanda Hafizah.
+                Semua Hak Dilindungi.
+            </p>
+
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
